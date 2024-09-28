@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/rounded_background"> <!-- Set the background to the custom drawable -->
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tuscany"
+        android:background="@drawable/rounded_image"
+      />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:numStars="5"
+            android:stepSize="0.2"
+            android:rating="3"
+            android:progressTint="@color/red"
+            android:scaleX="0.2"
+            android:scaleY="0.2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:text="Tuscany"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <TextView
+        android:id="@+id/textViewReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great food, cozy vibes, and service with a smile!"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/red"/>
+    </LinearLayout>
+
+</LinearLayout>
